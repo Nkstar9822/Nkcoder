@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <title>NkCoder-Home</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid ml-2">
+      <a class="navbar-brand" href="#">NkCoder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#php">PHP</a></li>
+              <li><a class="dropdown-item" href="#java">JAVA</a></li>
+              <li><a class="dropdown-item" href="#android">Android</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item " href="#css">Web-Desining</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html" target="_blank">ContactUs</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light me-2" type="submit">Search</button>
+          <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <div style="height: 56px;"></div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="loginModalLabel">Login To NkCoder</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    <form>
+<div class="mb-3">
+  <label for="exampleInputEmail1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+</div>
+<div class="mb-3">
+  <label for="exampleInputPassword1" class="form-label">Password</label>
+  <input type="password" class="form-control" id="exampleInputPassword1">
+</div>
+<div class="mb-3 form-check">
+  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+</div>
+<button type="submit" class="btn btn-primary">Login</button>
+</form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- SignUp Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="signupModalLabel">SignUp To NkCoder</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+<div class="mb-3">
+  <label for="exampleInputEmail1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+</div>
+<div class="mb-3">
+  <label for="exampleInputPassword1" class="form-label">Password</label>
+  <input type="password" class="form-control" id="exampleInputPassword1">
+</div>
+<div class="mb-3">
+  <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+  <input type="password" class="form-control" id="cexampleInputPassword1">
+</div>
+<div class="mb-3 form-check">
+  <input type="checkbox" class="form-check-input" id="AgreeCheck1">
+  <label class="form-check-label" for="AgreeCheck1">Agree To Term & Condition</label>
+</div>
+
+<button type="submit" class="btn btn-primary">SignUp</button>
+</form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+  
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="1.jpg" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Welcome to Nkcoder</h5>
+      <p>Technology , Web-Devloping and More.</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img src="2.jpg" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Welcome to Nkcoder</h5>
+      <p>Technology , Web-Devloping and More.</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img src="3.jpg" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Welcome to Nkcoder</h5>
+      <p>Technology , Web-Devloping and More.</p>
+    </div>
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+
+
+<div class="container my-4">
+<div class="row mb-2">
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary">PHP</strong>
+        <h3 class="mb-0" id="php">What is PHP ?</h3>
+        <div class="mb-1 text-muted">June 6</div>
+        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <img src="php.jpg" class="bd-placeholder-img" width="200" height="250">
+   
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-success">JAVA</strong>
+        <h3 class="mb-0" id="java">About JAVA</h3>
+        <div class="mb-1 text-muted">Nov 11</div>
+        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+       
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <img src="java.jpg" class="bd-placeholder-img" width="200" height="250">
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container my-4">
+<div class="row mb-2">
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-success">CSS</strong>
+        <h3 class="mb-0" id="css">What is CSS ?</h3>
+        <div class="mb-1 text-muted">June 6</div>
+        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <img src="css.jpg" class="bd-placeholder-img" width="200" height="250">
+     
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-danger">Android</strong>
+        <h3 class="mb-0" id="android">What is Android</h3>
+        <div class="mb-1 text-muted">Nov 11</div>
+        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+       
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <img src="android.jpg" class="bd-placeholder-img" width="200" height="250">
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2020–2022 NkCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+ 
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
